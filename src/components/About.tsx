@@ -5,7 +5,7 @@ function About() {
             id="about"
         >
             <img
-                src="/assets/pp.png"
+                src="/assets/pp.webp"
                 alt="profile picture"
                 className="w-4/5 lg:w-1/5"
             />
