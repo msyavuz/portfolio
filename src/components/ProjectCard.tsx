@@ -28,6 +28,7 @@ function ProjectCard(props: projectCardProps) {
                 src={props.imageSource}
                 alt="screenshot"
                 className="object-fill"
+                loading="lazy"
             />
             <Transition
                 show={showDescription}

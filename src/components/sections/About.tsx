@@ -8,6 +8,7 @@ function About() {
                 src="/assets/pp.webp"
                 alt="profile picture"
                 className="w-4/5 lg:w-1/5"
+                loading="lazy"
             />
             <p className="">
                 Self taught developer with a passion for learning

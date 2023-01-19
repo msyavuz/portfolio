@@ -12,28 +12,28 @@ function Projects() {
 
             <ProjectCard
                 title="My Unsplash"
-                imageSource="https://raw.githubusercontent.com/msyavuz/my-unsplash/main/assets/Screenshot.png"
+                imageSource="https://raw.githubusercontent.com/msyavuz/my-unsplash/main/assets/Screenshot.webp"
                 repoURL="https://github.com/msyavuz/my-unsplash"
             >
                 Personal unsplash library with NextJS and local sqlite database
             </ProjectCard>
             <ProjectCard
                 title="Event Board"
-                imageSource="https://github.com/msyavuz/Event-Board/blob/master/assets/Screenshot.png?raw=true"
+                imageSource="https://github.com/msyavuz/Event-Board/blob/master/assets/Screenshot.webp?raw=true"
                 repoURL="https://github.com/msyavuz/Event-Board"
             >
                 Event board app with NextJS
             </ProjectCard>
             <ProjectCard
                 title="Quoter"
-                imageSource="https://github.com/msyavuz/Quoter/raw/master/assets/Screenshot.png?raw=true"
+                imageSource="https://github.com/msyavuz/Quoter/raw/master/assets/Screenshot.webp?raw=true"
                 repoURL="https://github.com/msyavuz/Quoter"
             >
                 Quote generator app with focus on TDD.
             </ProjectCard>
             <ProjectCard
                 title="Imager"
-                imageSource="https://github.com/msyavuz/imager/raw/main/assets/Screenshot2.png?raw=true"
+                imageSource="https://github.com/msyavuz/imager/raw/main/assets/Screenshot2.webp?raw=true"
                 repoURL="https://github.com/msyavuz/imager"
             >
                 Image uploading and sharing app with NextJS and firestore
@@ -41,7 +41,7 @@ function Projects() {
             </ProjectCard>
             <ProjectCard
                 title="Keeper"
-                imageSource="https://github.com/msyavuz/Keeper/blob/master/assets/Screenshot.png?raw=true"
+                imageSource="https://github.com/msyavuz/Keeper/blob/master/assets/Screenshot.webp?raw=true"
                 repoURL="https://github.com/msyavuz/Keeper"
             >
                 Note taking app with React
