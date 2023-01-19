@@ -4,6 +4,7 @@ function About() {
             className="flex justify-center items-center flex-col gap-12 text-white font-bold text-3xl lg:text-xl text-center pt-24"
             id="about"
         >
+            <h1 className="text-3xl">Salih Yavuz</h1>
             <img
                 src="/assets/pp.webp"
                 alt="profile picture"
