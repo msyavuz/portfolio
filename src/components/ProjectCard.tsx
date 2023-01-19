@@ -12,7 +12,7 @@ function ProjectCard(props: projectCardProps) {
     const [showDescription, setShowDescription] = useState(false);
     return (
         <div
-            className="project-card relative scale-90 overflow-x-hidden col-span-1 text-center text-lg hover:scale-110 transition-all rounded"
+            className="project-card relative scale-90 overflow-x-hidden col-span-1 text-center text-lg hover:scale-110 transition-all rounded shadow"
             onMouseEnter={() => {
                 setShowDescription(true);
             }}
