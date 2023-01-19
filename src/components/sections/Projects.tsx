@@ -4,8 +4,12 @@ function Projects() {
     return (
         <section
             id="projects"
-            className="grid lg:grid-cols-3 place-content-center lg:mx-32 gap-12 lg:gap-8 mb-16 mx-2"
+            className="grid lg:grid-cols-3 place-content-center lg:mx-32 gap-12 lg:gap-8 mx-2 mb-8 lg:mb-0 lg:h-screen"
         >
+            <h2 className="lg:col-span-3 text-white font-bold tex-sm lg:text-xl text-center">
+                Projects
+            </h2>
+
             <ProjectCard
                 title="My Unsplash"
                 imageSource="https://raw.githubusercontent.com/msyavuz/my-unsplash/main/assets/Screenshot.png"
@@ -42,6 +46,13 @@ function Projects() {
             >
                 Note taking app with React
             </ProjectCard>
+            <a
+                href="https://github.com/msyavuz?tab=repositories"
+                target="_blank"
+                className="text-white font-bold text-2xl text-center grid place-content-center"
+            >
+                More...
+            </a>
         </section>
     );
 }

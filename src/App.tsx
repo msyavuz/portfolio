@@ -1,6 +1,6 @@
 import About from "./components/sections/About";
 import Navbar from "./components/sections/Navbar";
-import Tech from "./components/Tech";
+import Tech from "./components/sections/Tech";
 import Projects from "./components/sections/Projects";
 
 function App() {
