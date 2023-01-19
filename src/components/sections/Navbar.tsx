@@ -26,6 +26,7 @@ function Navbar() {
             </ul>
             <button
                 className=" lg:ml-8 hover:text-black rounded"
+                aria-label="hamburger button"
                 onClick={() => {
                     setIsOpen(!isOpen);
                 }}
