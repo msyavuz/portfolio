@@ -35,6 +35,13 @@ function Projects() {
                 Image uploading and sharing app with NextJS and firestore
                 backend
             </ProjectCard>
+            <ProjectCard
+                title="Keeper"
+                imageSource="https://github.com/msyavuz/Keeper/blob/master/assets/Screenshot.png?raw=true"
+                repoURL="https://github.com/msyavuz/Keeper"
+            >
+                Note taking app with React
+            </ProjectCard>
         </section>
     );
 }
