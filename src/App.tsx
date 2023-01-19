@@ -1,5 +1,6 @@
-import About from "./components/About";
-import Navbar from "./components/Navbar";
+import About from "./components/sections/About";
+import Navbar from "./components/sections/Navbar";
+import Projects from "./components/sections/Projects";
 import Tech from "./components/Tech";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
             <Navbar />
             <About />
             <Tech />
+            <Projects />
         </div>
     );
 }
