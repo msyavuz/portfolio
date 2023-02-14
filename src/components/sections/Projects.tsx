@@ -11,6 +11,13 @@ function Projects() {
             </h2>
 
             <ProjectCard
+                title="Image Generation"
+                imageSource="https://github.com/msyavuz/image-generator/raw/main/assets/Screenshot.png?raw=true"
+                repoURL="https://github.com/msyavuz/image-generator"
+            >
+                Image Generation with DALL-E API
+            </ProjectCard>
+            <ProjectCard
                 title="My Unsplash"
                 imageSource="https://raw.githubusercontent.com/msyavuz/my-unsplash/main/assets/Screenshot.webp"
                 repoURL="https://github.com/msyavuz/my-unsplash"
@@ -31,14 +38,14 @@ function Projects() {
             >
                 Quote generator app with focus on TDD.
             </ProjectCard>
-            <ProjectCard
+            {/* <ProjectCard
                 title="Imager"
                 imageSource="https://github.com/msyavuz/imager/raw/main/assets/Screenshot2.webp?raw=true"
                 repoURL="https://github.com/msyavuz/imager"
             >
                 Image uploading and sharing app with NextJS and firestore
                 backend
-            </ProjectCard>
+            </ProjectCard> */}
             <ProjectCard
                 title="Keeper"
                 imageSource="https://github.com/msyavuz/Keeper/blob/master/assets/Screenshot.webp?raw=true"
@@ -46,6 +53,7 @@ function Projects() {
             >
                 Note taking app with React
             </ProjectCard>
+
             <a
                 href="https://github.com/msyavuz?tab=repositories"
                 target="_blank"
