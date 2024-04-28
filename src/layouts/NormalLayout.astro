@@ -1,0 +1,21 @@
+---
+import Footer from "@components/Footer.astro";
+import Navbar from "@components/Navbar.astro";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout title="M. Salih Yavuz">
+    <header class="py-4">
+        <Navbar />
+    </header>
+    <main
+        class="px-4 py-4 font-notoSans lg:flex lg:items-center lg:justify-center"
+    >
+        <div class="flex flex-col gap-4 text-xl lg:w-1/2">
+            <slot />
+        </div>
+    </main>
+    <footer class="mb-4 flex items-center justify-center">
+        <Footer />
+    </footer>
+</BaseLayout>

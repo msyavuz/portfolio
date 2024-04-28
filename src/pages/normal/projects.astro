@@ -1,0 +1,45 @@
+---
+import ProjectCard from "@components/ProjectCard.astro";
+import NormalLayout from "@layouts/NormalLayout.astro";
+---
+
+<NormalLayout>
+	<h1 class="text-3xl font-extrabold leading-none tracking-tight text-blue">
+		Projects
+	</h1>
+	<div class="lg:grid lg:grid-cols-2 lg:place-content-center lg:gap-16">
+		<ProjectCard
+			title="Lua Capture"
+			href="https://github.com/msyavuz/Lua-Capture"
+		>
+			A website to test lua capture groups it runs embedded lua function
+			and serves htmx.
+		</ProjectCard>
+		<ProjectCard
+			title="Disco Api"
+			href="https://github.com/msyavuz/disco-api"
+		>
+			An api for Disco Elysium, my favourite video game. Built with
+			NestJS. Data scraped from wiki.
+		</ProjectCard>
+		<ProjectCard
+			title="ResumeIo2PDF"
+			href="https://github.com/msyavuz/resumeio2pdf"
+		>
+			Resume downloader for resume.io. Parses the resume code and creates
+			pdf.
+		</ProjectCard>
+		<ProjectCard
+			title="My Unsplash"
+			href="https://github.com/msyavuz/my-unsplash"
+		>
+			Unsplash library. Uses sqlite database to store personal unsplash
+			pictures and previews them.
+		</ProjectCard>
+
+		<p class="col-span-2">
+			I worked with a lot of clients as a freelance contractor over the
+			years but unfortunately i can't put them here.
+		</p>
+	</div>
+</NormalLayout>

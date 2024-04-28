@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import NormalLayout from "@layouts/NormalLayout.astro";
+export async function getStaticPaths() {
+	const blogEntries = await getCollection("blog");
+	return blogEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
+}
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<NormalLayout>
+	<h1 class="text-3xl font-extrabold leading-none tracking-tight text-blue">{entry.data.title}</h1>
+	<Content />
+</NormalLayout>

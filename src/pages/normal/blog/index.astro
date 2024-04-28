@@ -1,0 +1,28 @@
+---
+import NormalLayout from "@layouts/NormalLayout.astro";
+import Navlink from "@components/Navlink.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+
+console.log(posts);
+---
+
+<NormalLayout>
+	<p>
+		This is where i write stuff. I am new to writing so apologies in
+		advance. Feel free to correct any errors you see by raising an issue <Navlink
+			class="font-extrabold underline underline-offset-4"
+			href="https://github.com/msyavuz/terminal-portfolio/issues/new"
+			target="_blank">here</Navlink
+		>
+	</p>
+
+	<div class="lg:grid lg:grid-cols-2 lg:place-content-center lg:gap-16">
+		{
+			posts.map((post) => (
+				<a href={"blog/posts/" + post.slug}>{post.slug}</a>
+			))
+		}
+	</div>
+</NormalLayout>

@@ -1,0 +1,24 @@
+---
+import { Icon } from "astro-icon/components";
+import Navlink from "./Navlink.astro";
+---
+
+<div
+    class="flex items-center justify-center gap-4 text-2xl lg:mt-12 lg:w-1/2 lg:justify-end lg:gap-4"
+>
+    <Navlink href="https://www.github.com/msyavuz" target="_blank">
+        <Icon name="prime:github" aria-hidden="true" />
+        <span class="sr-only">Github Link</span>
+    </Navlink>
+    <Navlink href="https://twitter.com/salihy_avuz" target="_blank">
+        <Icon name="prime:twitter" />
+        <span class="sr-only">Twitter Link</span>
+    </Navlink>
+    <Navlink
+        href="https://www.linkedin.com/in/mehmetsalihyavuz/"
+        target="_blank"
+    >
+        <Icon name="prime:linkedin" />
+        <span class="sr-only">Linkedin Link</span>
+    </Navlink>
+</div>

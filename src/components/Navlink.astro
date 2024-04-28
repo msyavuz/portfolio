@@ -1,0 +1,26 @@
+---
+interface Props {
+    href: string;
+    target?: "_blank" | "_top" | "_self" | "_parent";
+    class?: string;
+}
+const { href, target = "_self", class: className, ...rest } = Astro.props;
+const url = Astro.url;
+---
+
+<a
+    {href}
+    class:list={[
+        className,
+        {
+            "text-brightPurple underline underline-offset-4 transition-all":
+                url.href.endsWith(href),
+            "transition-all hover:text-brightPurple hover:underline hover:underline-offset-4":
+                !url.href.endsWith(href),
+        },
+    ]}
+    {target}
+    {...rest}
+>
+    <slot />
+</a>

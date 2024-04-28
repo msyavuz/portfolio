@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon/components";
+import Terminal from "@components/Terminal.svelte";
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="M. Salih Yavuz">
+	<a
+		href="/normal"
+		class="absolute right-4 top-1 text-foreground no-underline hover:text-brightPurple"
+	>
+		<Icon
+			name="fa:universal-access"
+			class="text-xl lg:text-5xl"
+			aria-hidden="true"
+		/>
+		<span class="sr-only">Accessible version</span>
+	</a>
+	<Terminal client:only="svelte" />
+</BaseLayout>
+<style>
+	*::-webkit-scrollbar {
+		display: none;
+	}
+</style>
