@@ -28,7 +28,7 @@ export default {
       },
       fontFamily: {
         jetBrainsMono: ["JetBrains Mono", ...defaultTheme.fontFamily.sans],
-        notoSans: ["Noto Sans", "sans-serif"],
+        notoSans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
       },
     },
   },
