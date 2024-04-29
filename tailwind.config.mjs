@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -26,7 +27,7 @@ export default {
         cursorColor: "#c0caf5",
       },
       fontFamily: {
-        jetBrainsMono: ["JetBrains Mono", "sans-serif"],
+        jetBrainsMono: ["JetBrains Mono", ...defaultTheme.fontFamily.sans],
         notoSans: ["Noto Sans", "sans-serif"],
       },
     },
