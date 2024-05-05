@@ -19,10 +19,6 @@ console.log(posts);
 	</p>
 
 	<div class="lg:grid lg:grid-cols-2 lg:place-content-center lg:gap-16">
-		{
-			posts.map((post) => (
-				<a href={"blog/posts/" + post.slug}>{post.slug}</a>
-			))
-		}
+		{posts.map((post) => <a href={"posts/" + post.slug}>{post.slug}</a>)}
 	</div>
 </NormalLayout>
